@@ -18,14 +18,14 @@
         <h1>Lista de Tarefas </h1>
         <p>Um meio fácil para acompanhar suas tarefas!</p><br>
 
-        <h4>Nova Tarefa</h4>
+        <h4>Criação de Nova Tarefa</h4><br>
         <form> 
-    
                 <input type="datetime-local">
-                <input type="text" id="input_filtro" placeholder="Digite sua tarefa"> <button class="btn-btn-primary type="submit" >Incluir Tarefa</button>
+                <input type="text" id="input_filtro" placeholder="Digite sua tarefa"> <button onclick=adicionarTarefa() class="btn-btn-primary type="submit" >Incluir Tarefa</button>
          
         </form>
-        
+
+       
         <div></div>
             <br><p>Filtro de tarefas: </p>
             <select name="filtro" id="select_filtro">
@@ -34,9 +34,10 @@
                 <option value="pendentes">Pendentes</option>
             </select>
         </div>
+      
         <ul>
             <ol id="">
-                
+              
             </ol>
 
         </ul>

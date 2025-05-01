@@ -13,17 +13,24 @@ body{
     
 }
 
-form{
-   
-   
+ input{
+   background-color: #1BCAE9;
+   color: black;
+   border-width: 2px;
+   border-color: antiquewhite;
+   width: 250px;
+   height: 45px;
+   opacity: 0.9;
+   border-radius:  1rem; 
 }
+
 button{
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 0.7rem;
-    background-color:green, !important;
     border-radius: 100px;
-   
-    
+    background-color: #26D598;
+    color: white;
+
 }
 
