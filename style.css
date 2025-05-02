@@ -8,15 +8,20 @@
 }
 
 body{
-    /* background: url("./img/background.png") */
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("./img/background.jpg");
+    
 }
 
+
 h1{
+    font-size:50px;
     text-align: center;
     border-color: black;
     color: #26D598;
     text-shadow: 2px;
-    margin: 5px auto 0;
+    margin: 15px auto 0;
+    /* Para ajustar a cor e o tamanho da borda do texto do titulo */
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: #0f0f0f; 
 }
@@ -53,16 +58,22 @@ h6{
     cursor: pointer;
    
 }
+
+/* mudar opacidade quando passar o mouse no botão */
 .botao-adicionar-tarefa:hover{
     opacity: 0.8;
+   
 }
 
+/* para mudar a opacidade quando o botão estiver ativo */
 .botao-adicionar-tarefa:active{
     opacity: 0.6;
+    
 }
 
 .listatarefas{
     width:100%;
+    /* list-style retira o ponto no inicio da lista */
     list-style: none;
     margin-top: 25px;
 
@@ -70,6 +81,7 @@ h6{
 
 .lista{
     background-color:antiquewhite;
+    /* para dar a sombra ao redor dos itens usei um box-shadow */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 50px;
     display: flex;
@@ -78,6 +90,28 @@ h6{
     padding: 0 15px;
     border-radius: 5px;
     margin-bottom: 15px;
+    cursor: pointer;
    
+}
+/* Para ajustar o efeito da opacidade nos icones e deixar uma transição */
+svg{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+#check{
+    color: #18d35f;
+
+}
+#lixeira{
+    color:#cf0e0e;
+}
+
+/*Para aparecer somente quando passar o mouse os icones de lixeira e concluir */
+.lista:hover svg{
+    opacity: 1;       
+}
+.done{
+    background-color: #18d35f;
+    /* text-decoration: line-through; */
 }
 
