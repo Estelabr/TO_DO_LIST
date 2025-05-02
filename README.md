@@ -24,3 +24,11 @@
 * IDE UTILIZADA: Visual Studio Code.
 
 * CREATORS: Ana Trindade; Estela Kaster; Josué Silva.
+
+PROJETO FIGMA: 
+
+link: https://www.figma.com/design/g057vbRtOJ2qslYRHGUrIw/Untitled?node-id=1-3&t=gFNWRqfIFOTCbxK4-1
+<img src="img/desktop.png" alt="projeto-desktop">
+<img src="img/mobile.png" alt="projeto-mobile">
+
+
