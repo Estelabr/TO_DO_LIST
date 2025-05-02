@@ -66,7 +66,4 @@ function recarregarItens(){
     mostrarTarefas()
 
 }
-
-
-recarregarItens()
 button.addEventListener('click', AdicionarTarefa)
