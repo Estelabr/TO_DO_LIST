@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do-List></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Master List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cal+Sans&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="container-fluid">
-        <h1>Lista de Tarefas </h1>
-        <p>Um meio fácil para acompanhar suas tarefas!</p><br>
-
-        <h4>Criação de Nova Tarefa</h4><br>
-        <form> 
-                <input type="datetime-local">
-                <input type="text" id="input_filtro" placeholder="Digite sua tarefa"> <button onclick=adicionarTarefa() class="btn-btn-primary type="submit" >Incluir Tarefa</button>
-         
-        </form>
-
-       
-        <div></div>
-            <br><p>Filtro de tarefas: </p>
-            <select name="filtro" id="select_filtro">
-                <option value="todas">Todas</option>
-                <option value="conluidas">Concluídas</option>
-                <option value="pendentes">Pendentes</option>
-            </select>
-        </div>
-      
-        <ul>
-            <ol id="">
-              
-            </ol>
-
-        </ul>
-    
+    <div class="titulos"></div>
+        <h1>Master List</h1>
+        <h6>Seu site de controle de tarefas!</h6>
     </div>
-    
+    <div class="container">
+        
+        <input class="input-tarefa" placeholder="Digite sua Tarefa">
+        <button class="botao-adicionar-tarefa">Adicionar Tarefa</button>
+
+        <ul class="listatarefas">
+            <li class="lista"> 
+                <svg alt="icone-de-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5m8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                </svg>
+                <p>Teste</p>
+                <svg alt="icone-de-lixeira" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                </svg>
+            </li>
+            <li class="lista">
+                <p>Teste2</p>
+            </li>
+        </ul>
+
+    </div>
+
 </body>
 
 </html>
