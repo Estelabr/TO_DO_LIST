@@ -71,6 +71,20 @@ h6{
     
 }
 
+#filtro-tarefas{
+    padding: 0 15px;
+    margin-top: 15px;
+    margin: 10px auto 0;
+    display: flex;
+    border-radius: 7px;
+    background-color: rgb(145, 223, 180);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 100;
+}
+option{
+    align-items: center;
+}
+
 .listatarefas{
     width:100%;
     /* list-style retira o ponto no inicio da lista */

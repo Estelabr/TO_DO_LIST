@@ -24,9 +24,17 @@
         <input class="input-tarefa" placeholder="Digite sua Tarefa">
         <button class="botao-adicionar-tarefa">Adicionar Tarefa</button>
 
+        <select id="filtro-tarefas" onchange="filtrarTarefas()">
+            <option value="todas">Todas</option>
+            <option value="pendentes">Pendentes</option>
+            <option value="concluidas">Concluídas</option>
+          </select>          
+
         <ul class="listatarefas">
               
         </ul>
+        
+                
 
     </div>
 

@@ -67,5 +67,6 @@ function recarregarItens(){
 
 }
 
-recarregarItens();
+
+recarregarItens()
 button.addEventListener('click', AdicionarTarefa)
